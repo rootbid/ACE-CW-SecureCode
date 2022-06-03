@@ -18,8 +18,8 @@ jobs:
           node-version: "14"
       - name: Install and Build Log4brains
         run: |
-          npm install -g log4brains
-          log4brains build --basePath /https://github.com/rootbid/ACE-CW-SecureCode/adr
+          npm install -g log4brains@1.0.0-beta.11
+          log4brains build --basePath /${GITHUB_REPOSITORY#*/}/adr
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
