@@ -1,0 +1,5 @@
+project:
+  name: ACE-SecureCode
+  tz: Africa/Abidjan
+  adrFolder: ./docs/adr
+  packages: []
